@@ -1,0 +1,21 @@
+[general]
+import = [
+    "./themes/carbonfox.toml"
+]
+
+[window]
+dimensions = { columns = 135, lines = 32 }
+padding = { x = 10, y = 10 }
+decorations = "None"
+opacity = 0.9
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+size = 14
+offset = { x = 0, y = 0 }
+
+[keyboard]
+bindings = [
+  { key = "F11", action = "ToggleFullscreen" },
+  { key = "Q", mods = "Control|Shift", action = "Quit" },
+]
