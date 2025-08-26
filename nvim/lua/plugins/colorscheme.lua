@@ -2,13 +2,27 @@
 
 return {
 	{
-		"EdenEast/nightfox.nvim",
+		"sainnhe/edge",
 		lazy = false,
 		priority = 1000,
 		config = function()
-			vim.cmd.colorscheme("carbonfox")
+			vim.g.edge_enable_italic = true
+			vim.g.edge_style = "aura" -- 'default', 'aura', 'neon'
+			vim.g.edge_transparent_background = false
+			vim.g.edge_diagnostic_virtual_text = "colored"
+			vim.g.edge_inlay_hints_background = "none" -- 'none', 'dimmed'
+			vim.cmd.colorscheme("edge")
 		end,
 	},
+
+	-- {
+	-- 	"EdenEast/nightfox.nvim",
+	-- 	lazy = false,
+	-- 	priority = 1000,
+	-- 	config = function()
+	-- 		vim.cmd.colorscheme("carbonfox")
+	-- 	end,
+	-- },
 
 	-- {
 	-- 	"folke/tokyonight.nvim",
@@ -46,20 +60,6 @@ return {
 	-- 		vim.g.sonokai_enable_italic = true
 	-- 		vim.g.sonokai_diagnostic_text_highlight = false
 	-- 		vim.cmd.colorscheme("sonokai")
-	-- 	end,
-	-- },
-
-	-- {
-	-- 	"sainnhe/edge",
-	-- 	lazy = false,
-	-- 	priority = 1000,
-	-- 	config = function()
-	-- 		vim.g.edge_enable_italic = true
-	-- 		vim.g.edge_style = "aura" -- 'default', 'aura', 'neon'
-	-- 		vim.g.edge_transparent_background = false
-	-- 		vim.g.edge_diagnostic_virtual_text = "colored"
-	-- 		vim.g.edge_inlay_hints_background = "none" -- 'none', 'dimmed'
-	-- 		vim.cmd.colorscheme("edge")
 	-- 	end,
 	-- },
 }
